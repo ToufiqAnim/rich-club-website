@@ -1,5 +1,9 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 import './About.css'
+
 
 const About = (props) => {
      const {name,age,country,netWorth,source,img} = props.profile;
@@ -8,11 +12,11 @@ const About = (props) => {
             <div className="profile-info">
                 <img src={img} alt="" /> 
                 <h2>Name: {name}</h2>
-                <h3>Age: {age}</h3>
-                <h3>Source: {source}</h3>
-                <h4>Country: {country}</h4>
-                <h4>Net-Worth: ${netWorth}B </h4>
-                <button className='btn' onClick = {() =>props.handleWealth(props.profile)}> add to cart</button>
+                <p>Age: {age}</p>
+                <p>Source: {source}</p>
+                <p>Country: {country}</p>
+                <h3>Net-Worth: ${netWorth}B </h3>
+                <button className='btn' onClick = {() =>props.handleWealth(props.profile)}><FontAwesomeIcon icon={faShoppingCart} /> add to cart</button>
             </div> 
         </div>
     );
