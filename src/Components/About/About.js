@@ -1,6 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faDollarSign} from '@fortawesome/free-solid-svg-icons';
+import { FaFacebook,FaTwitter } from "react-icons/fa";
+
+
 
 import './About.css'
 
@@ -16,7 +19,11 @@ const About = (props) => {
                 <p>Source: {source}</p>
                 <p>Country: {country}</p>
                 <h3>Net-Worth: ${netWorth}B </h3>
-                <button className='btn' onClick = {() =>props.handleWealth(props.profile)}><FontAwesomeIcon icon={faShoppingCart} /> add to cart</button>
+                <button className='btn' onClick = {() =>props.handleWealth(props.profile)}><FontAwesomeIcon icon={faDollarSign} /> Add Wealth</button>
+                <h1>
+                    <span className='icon'><FaFacebook color = '#4267B2'></FaFacebook></span> 
+                    <span><FaTwitter color = '#1d9bf0'></FaTwitter></span>
+                </h1>
             </div> 
         </div>
     );

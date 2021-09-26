@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDollarSign, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 const Header = () => {
     return (
@@ -10,8 +10,8 @@ const Header = () => {
             <div className="header">
             <nav>
                 <a href="/billionaire"><FontAwesomeIcon icon={faDollarSign} />BILLIONAIRE</a>
-                <a className='richest' href="/richest">THE WORLDS RICHEST</a> 
-                <a href="/profile">PROFILE</a>
+                <a  href="/richest"><span className='richest'>THE WORLD'S RICHEST</span></a> 
+                <a href="/profile">ABOUT</a>
             </nav>
         </div>
             </nav>

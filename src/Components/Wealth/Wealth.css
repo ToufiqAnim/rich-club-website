@@ -1,0 +1,14 @@
+.wealth-container{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin:20px 40px;
+    
+}
+.wealth-data{
+    padding: 30px;
+    
+}
+.wealth-data h2{
+    font-weight: 100;
+}
+
